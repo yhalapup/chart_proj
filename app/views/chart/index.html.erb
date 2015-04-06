@@ -1,0 +1,26 @@
+<ol>
+  <li>Click on stacked bar (only for "abnormal" data item) and type a message for this data.</li>
+  <li>Hover mouse on this bar. The desire data will have the attribute called "message".</li>
+</ol>
+<div><small><i>Hint: in this example the bar with biggest failed tests count is "abnormal" (for more information see csv_parser_helper.rb)</i></small></div>
+<div><small>To see the data separately - switch them in the legend</small></div>
+
+<input id="csv" type="hidden" data-csv="<%= @data %>" />
+<div id="stacked-chart"></div>
+<div id="msgbox">
+    <h4>Please, input a message for failing tests</h4>
+    <input type="text" />
+    <button>ok</button>
+</div>
+<div id="line-chart"></div>
+
+<script>
+  AmCharts.ready(function() {
+    var stackedchart = AmCharts.makeChart("stacked-chart", stackedChartOptions);
+    stackedchart.addListener("clickGraphItem", handleClick);
+    stackedchart.write("stacked-chart");
+
+    var linechart = AmCharts.makeChart("line-chart", lineChartOptions);
+    linechart.write("line-chart");
+  })
+</script>
