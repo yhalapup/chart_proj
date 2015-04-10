@@ -20,10 +20,10 @@ bundler_version: 1.8.4                  # IMPORTANT: set ruby bundler version to
 #   post_worker: "echo 'capture screenshots'"    # Runs after a worker is done
 #   post_build: "echo 'deploy to staging'"  # Runs once on master after entire build completes
 #
-test_pattern:                             # IMPORTANT: You can specify ruby-style glob matching
-  - spec/**_spec.rb                      #            for tests to run
+test_pattern:
+  - spec/**_spec.rb 
 tests:
-  - 'bundle exec rake jasmine:ci'
+  command: bundle exec rake jasmine:ci
 rake:
   rails_env: 'tddium'
 environment:
