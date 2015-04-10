@@ -18,3 +18,5 @@
 
 //= require chart_helpers
 //= require chart_options
+
+//= require jasmine-jquery
