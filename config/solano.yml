@@ -20,18 +20,11 @@ bundler_version: 1.8.4                  # IMPORTANT: set ruby bundler version to
 #   post_worker: "echo 'capture screenshots'"    # Runs after a worker is done
 #   post_build: "echo 'deploy to staging'"  # Runs once on master after entire build completes
 #
-test_pattern:                             # IMPORTANT: You can specify ruby-style glob matching
-  - spec/**_spec.rb                      #            for tests to run
+test_pattern:
+  - spec/**_spec.rb 
 tests:
-  - 'bundle exec rake jasmine:ci'
-rake:
-  rails_env: 'tddium'
-environment:
-  'RAILS_ENV': 'tddium'
-cache:
-  key_paths:
-    - Gemfile
-    - gemname.gemspec
+  - type: custom
+    command: bundle exec rake jasmine:ci
 
 # test_exclude_pattern:                   # After files are collected by the test_pattern, the
 #   - 'spec/flaky/*'                       # test_exclude_pattern is used to remove tests that you don't
