@@ -1,11 +1,10 @@
 source 'https://rubygems.org'
 
-gem 'rails', '4.2.0'
+gem 'rails'
 gem 'jquery-rails'
 gem 'solano'
 
 group :development, :test do
-  gem 'byebug'
-  gem 'rspec-rails', '~> 3.0'
+  gem 'rspec-rails'
 end
 
