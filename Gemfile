@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 gem 'rails', '4.2.0'
 gem 'jquery-rails'
+gem 'solano'
 
 group :development, :test do
   gem 'byebug'
