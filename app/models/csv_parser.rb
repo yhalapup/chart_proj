@@ -14,9 +14,10 @@ class CSVParser
     @csv_data = csv_rows_to_hash(path)
   end
 
-  def result_hash
-    result_arr = []
+  def result_hash(grouping: true)
+    return @csv_data unless grouping
 
+    result_arr = []
     group_by_date.each_pair do |date, hash_arr|
       result_arr << create_new_hash(date, hash_arr)
     end

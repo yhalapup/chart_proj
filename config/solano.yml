@@ -25,6 +25,7 @@ test_pattern:
 tests:
   - type: custom
     command: bundle exec rake jasmine:ci
+coverage: true
 
 # test_exclude_pattern:                   # After files are collected by the test_pattern, the
 #   - 'spec/flaky/*'                       # test_exclude_pattern is used to remove tests that you don't
