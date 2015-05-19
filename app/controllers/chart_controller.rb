@@ -4,6 +4,6 @@ class ChartController < ApplicationController
     # w/o grouping
     @data = parser.result_hash(grouping: false).to_json
     # for group by date
-    # @data = parser.result_hash.to_json
+    @data = parser.result_hash.to_json
   end
 end
