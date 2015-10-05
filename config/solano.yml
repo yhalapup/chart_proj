@@ -5,11 +5,12 @@ notify:
 - channel: email
   trigger-on: failed
   branch: master*
-  message: "Congratulations, testing of %repo%'s %branch% branch finished in %duration% with %error-count% error(s) and %passed-count% success(es)"
+  message: "Fail"
   recipients: asaichuk@solanolabs.com
+  body: "custom"
 
 - channel: email
-  trigger-on: status-changed
+  trigger-on: failed
   branch: master*
-  message: "Status-changed Congratulations, testing of %repo%'s %branch% branch finished in %duration% with %error-count% error(s) and %passed-count% success(es)"
+  message: "Fail w/o body"
   recipients: asaichuk@solanolabs.com
