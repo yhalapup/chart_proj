@@ -14,3 +14,14 @@ notify:
   branch: master*
   message: "Fail w/o body"
   recipients: asaichuk@solanolabs.com
+
+plan:
+  - unit
+  - js
+profiles:
+  unit:
+    test_pattern:
+      - spec/models/**_spec.rb
+  js:
+    tests:
+      - bundle exec rake jasmine:ci
