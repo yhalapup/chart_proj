@@ -1,4 +1,7 @@
-ruby_version: "ruby-2.0.0-p643"
+ruby_version:
+SPLIT:
+  - 'ruby-1.9.3-p545'
+  - 'ruby-2.1.5'
 bundler_version: "1.11.2"
 
 notify:
