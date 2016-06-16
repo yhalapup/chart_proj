@@ -14,7 +14,7 @@ class CSVParser
     @csv_data = csv_rows_to_hash(path)
   end
 
-  def result_hash(grouping: true)
+  def result_hash(grouping = true)
     return @csv_data unless grouping
 
     result_arr = []
