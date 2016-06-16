@@ -1,5 +1,14 @@
-ruby_version:
-  SPLIT:
-    - 'ruby-1.9.3-p545'
-    - 'ruby-2.1.5'
-bundler_version: 1.10.6
+ruby_version: 'ruby-1.9.3-p545'
+
+plan:
+  - unit
+  - js
+profiles:
+  unit:
+    ruby_version: 'ruby-2.1.2'
+    test_pattern:
+      - spec/models/**_spec.rb
+  js:
+    ruby_version: 'ruby-2.1.5'
+    tests:
+      - bundle exec rake jasmine:ci
