@@ -1,4 +1,5 @@
 ruby_version:
   SPLIT:
-    - 'ruby-2.1.2'
+    - 'ruby-1.9.3-p545'
     - 'ruby-2.1.5'
+bundler_version: 1.10.6
