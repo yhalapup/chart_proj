@@ -14,3 +14,7 @@ notify:
   branch: master*
   message: "Fail w/o body"
   recipients: asaichuk@solanolabs.com
+
+coverage:
+  version: 2
+  enabled: true
