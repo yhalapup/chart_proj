@@ -1,20 +1,15 @@
 ruby_version: "ruby-2.0.0-p643"
 bundler_version: "1.11.2"
-
-notify:
-- channel: email
-  trigger-on: failed
-  branch: master*
-  message: "Fail"
-  recipients: asaichuk@solanolabs.com
-  body: "custom"
-
-- channel: email
-  trigger-on: failed
-  branch: master*
-  message: "Fail w/o body"
-  recipients: asaichuk@solanolabs.com
-
+plan:
+  - default
 coverage:
   version: 2
   enabled: true
+profiles:
+  default:
+    coverage:
+      version: 2
+      enabled: true
+      ratchet: 10
+    test_pattern:
+      - spec/models/csv_parser_spec.rb
