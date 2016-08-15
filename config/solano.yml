@@ -18,3 +18,7 @@ notify:
 coverage:
   version: 2
   enabled: true
+
+rerun_list:
+  - spec/models/sleep_spec.rb
+  - spec/models/csv_parser_spec.rb
