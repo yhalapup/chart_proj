@@ -3,22 +3,11 @@ bundler_version: "1.11.2"
 
 notify:
 - channel: email
-  trigger-on: failed
+  trigger-on: done
   branch: master*
-  message: "Fail"
+  message: "bbbbbbbb"
   recipients: asaichuk@solanolabs.com
-  body: "custom"
-
-- channel: email
-  trigger-on: failed
-  branch: master*
-  message: "Fail w/o body"
-  recipients: asaichuk@solanolabs.com
-
-coverage:
-  version: 2
-  enabled: true
+  body: "aaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 
 rerun_list:
-  - spec/models/sleep_spec.rb
   - spec/models/csv_parser_spec.rb
