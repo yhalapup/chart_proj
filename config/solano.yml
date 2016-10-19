@@ -9,5 +9,5 @@ notify:
   recipients: asaichuk@solanolabs.com
   body: "aaaaaaaaaaaaaaaaaaaaaaaaaaaa"
 
-rerun_list:
-  - spec/models/csv_parser_spec.rb
+hooks:
+  notification: "./notification.sh"
