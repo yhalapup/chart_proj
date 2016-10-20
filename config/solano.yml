@@ -1,13 +1,16 @@
 ruby_version: "ruby-2.0.0-p643"
 bundler_version: "1.11.2"
 
-notify:
-- channel: email
-  trigger-on: done
-  branch: master*
-  message: "bbbbbbbb"
-  recipients: asaichuk@solanolabs.com
-  body: "aaaaaaaaaaaaaaaaaaaaaaaaaaaa"
-
 hooks:
-  notification: "./notification.sh"
+  post_setup: echo "Deploy Step 1"
+  post_build: echo "Deploy Step 2"
+
+worker_limit: 2
+
+test_pattern:
+  - spec/**_spec.rb
+
+coverage:
+  version: 2
+  enabled: true
+  ratchet: 99

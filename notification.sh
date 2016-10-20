@@ -4,4 +4,4 @@ echo 'notify:
   room: general
   team: mytest1
   branch: master*
-  message: "@asaichuk, ping dude"' > notify_rule.yml
+  message: "<@asaichuk>, test message"' > notify_rule.yml

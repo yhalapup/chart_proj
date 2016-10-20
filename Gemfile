@@ -9,5 +9,6 @@ group :development, :test do
   gem 'jasmine'
   gem 'jasmine-jquery-rails'
   gem 'rspec-rails', '~> 3.0'
+  gem 'simplecov', :require => false
 end
 
