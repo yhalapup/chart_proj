@@ -6,8 +6,11 @@ RSpec.describe CSVParser, type: :model do
   subject { CSVParser.new(path) }
   let(:data) { subject.instance_variable_get("@csv_data") }
 
-  it "included CsvParserHelper" do
-    expect(subject).to be_a(CsvParserHelper)
+  100.times do |i|
+    it "included CsvParserHelper #{i}" do
+      sleep(2)
+      expect(subject).to be_a(CsvParserHelper)
+    end
   end
 
   context "for csv data" do

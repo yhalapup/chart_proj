@@ -1,16 +1,18 @@
 ruby_version: "ruby-2.0.0-p643"
 bundler_version: "1.11.2"
 
-hooks:
-  post_setup: echo "Deploy Step 1"
-  post_build: echo "Deploy Step 2"
+plan:
+  - default
+  - js
 
-worker_limit: 2
-
-test_pattern:
-  - spec/**_spec.rb
+profiles:
+  default:
+    test_pattern:
+      - spec/**_spec.rb
+  js:
+    tests:
+      - bundle exec rake jasmine:ci
 
 coverage:
   version: 2
   enabled: true
-  ratchet: 99
