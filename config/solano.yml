@@ -2,8 +2,8 @@ ruby_version: "ruby-2.0.0-p643"
 bundler_version: "1.11.2"
 
 plan:
-  - default
   - js
+  - default
 
 profiles:
   default:
