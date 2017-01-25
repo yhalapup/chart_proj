@@ -8,7 +8,7 @@ plan:
 profiles:
   default:
     test_pattern:
-      - spec/**_spec.rb
+      - spec/models/**_spec.rb
   js:
     tests:
       - bundle exec rake jasmine:ci
