@@ -1,15 +1,23 @@
 ruby_version: "ruby-2.0.0-p643"
 bundler_version: "1.11.2"
 plan:
-  - default
+  - first
+  - manual_approved
+  - third
 coverage:
   version: 2
   enabled: true
 profiles:
-  default:
+  first:
     coverage:
       version: 2
       enabled: true
       ratchet: 10
+    test_pattern:
+      - spec/models/csv_parser_spec.rb
+  manual_approved:
+    test_pattern:
+      - spec/models/csv_parser_spec.rb
+  third:
     test_pattern:
       - spec/models/csv_parser_spec.rb
