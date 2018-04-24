@@ -2,7 +2,7 @@ ruby_version: "ruby-2.0.0-p643"
 bundler_version: "1.11.2"
 plan:
   - first
-  - manual_approved
+  - manual_approval
   - third
 coverage:
   version: 2
@@ -15,9 +15,11 @@ profiles:
       ratchet: 10
     test_pattern:
       - spec/models/csv_parser_spec.rb
-  manual_approved:
-    test_pattern:
-      - spec/models/csv_parser_spec.rb
+  manual_approval:
+    approvers:
+      - test1@example.com
+      - test2@example.com
+      - test3@example.com
   third:
     test_pattern:
       - spec/models/csv_parser_spec.rb
