@@ -15,6 +15,7 @@ profiles:
       ratchet: 10
     test_pattern:
       - spec/models/csv_parser_spec.rb
+    script: bin/test
   manual_approval:
     approvers:
       - test1@example.com
