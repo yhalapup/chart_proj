@@ -1,5 +1,5 @@
-ruby_version: "ruby-2.0.0-p643"
-bundler_version: "1.11.2"
+ruby_version: "ruby 2.3.0p0"
+bundler_version: "1.16.1"
 plan:
   - default
 coverage:
