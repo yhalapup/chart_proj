@@ -1,0 +1,15 @@
+plan:
+- first
+- second
+
+steps:
+  fetch:
+    script: bin/fetch
+  first:
+    script: bin/first
+    output:
+      - example.txt
+  second:
+    script: bin/second
+    input:
+      - example.txt

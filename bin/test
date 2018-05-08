@@ -1,0 +1,2 @@
+#!/usr/bin/env bash
+echo "Agent2 is running..."
