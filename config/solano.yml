@@ -1,15 +1,3 @@
 ruby_version: "ruby 2.3.0p0"
 bundler_version: "1.16.1"
-plan:
-  - default
-coverage:
-  version: 2
-  enabled: true
-profiles:
-  default:
-    coverage:
-      version: 2
-      enabled: true
-      ratchet: 10
-    test_pattern:
-      - spec/models/csv_parser_spec.rb
+script: bin/test
