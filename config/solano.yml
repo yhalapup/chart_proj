@@ -1,3 +1,15 @@
 ruby_version: "ruby 2.3.0p0"
 bundler_version: "1.16.1"
-script: bin/test
+plan:
+  - first
+  - manual_approval
+  - second
+profiles:
+  first:
+    test_pattern:
+      - spec/models/**_spec.rb
+  manual_approval:
+    recipients: "owners"
+  second:
+    test_pattern:
+      - spec/models/**_spec.rb
