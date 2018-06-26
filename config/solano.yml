@@ -9,7 +9,8 @@ profiles:
     test_pattern:
       - spec/models/**_spec.rb
   manual_approval:
-    recipients: "owners"
+    recipients:
+      - "admin@example.com"
   second:
     test_pattern:
       - spec/models/**_spec.rb
