@@ -1,5 +1,8 @@
 plan:
-- first
+- one
+- two
 steps:
-  first:
+  one:
     script: bin/first
+  two:
+    script: bin/second
