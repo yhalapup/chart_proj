@@ -1,2 +1,2 @@
 #!/usr/bin/env bash
-touch example.txt
+echo "first"
