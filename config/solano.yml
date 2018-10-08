@@ -9,9 +9,9 @@ steps:
   first:
     script: bin/first
     output:
-      - out.tar
+      - out2.tar
 
   second:
     script: bin/second
     input:
-      - out.tar
+      - out2.tar
