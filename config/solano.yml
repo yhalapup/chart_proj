@@ -14,4 +14,4 @@ steps:
   second:
     script: bin/second
     input:
-      - out.tar
+      - out2.tar
