@@ -1,5 +1,6 @@
 plan:
 - first
+- second
 
 steps:
   fetch:
@@ -7,3 +8,10 @@ steps:
 
   first:
     script: bin/first
+    output:
+      - out.tar
+
+  second:
+    script: bin/second
+    input:
+      - out.tar

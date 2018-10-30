@@ -1,3 +1,3 @@
 #!/usr/bin/env bash
 echo "FIRST is running..."
-sleep 10000
+tar -cvzf out.tar config/solano.yml
