@@ -10,8 +10,10 @@ steps:
     script: bin/first
     output:
       - out.tar
+    agent2: agent2
 
   second:
     script: bin/second
     input:
       - out.tar
+    agent2: stage2
