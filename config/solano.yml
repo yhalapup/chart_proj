@@ -13,6 +13,6 @@ profiles:
       - out.tar
 
   second:
-    agent: stage2
+    agent: emcee
     test_pattern:
       - spec/models/**_spec.rb
