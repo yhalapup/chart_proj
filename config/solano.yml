@@ -2,18 +2,17 @@ plan:
 - first
 - second
 
-steps:
+profiles:
   fetch:
     script: bin/fetch
 
   first:
+    agent: agent2
     script: bin/first
     output:
       - out.tar
-    agent2: agent2
 
   second:
-    script: bin/second
-    input:
-      - out.tar
-    agent2: stage2
+    agent: stage2
+    test_pattern:
+      - spec/models/**_spec.rb
