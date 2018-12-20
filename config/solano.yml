@@ -5,10 +5,7 @@ plan:
 - first
 - second
 
-steps:
-  fetch:
-    script: bin/fetch
-
+profiles:
   first:
     test_pattern:
       - spec/models/**_spec.rb
