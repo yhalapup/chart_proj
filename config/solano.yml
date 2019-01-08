@@ -19,3 +19,7 @@ profiles:
     agent: emcee
     test_pattern:
       - spec/models/**_spec.rb
+
+coverage:
+  version: 2
+  enabled: true
