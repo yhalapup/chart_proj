@@ -3,13 +3,12 @@ bundler_version: "1.15.4"
 
 plan:
 - first
-- second
 
 profiles:
-  first:
-    test_pattern:
-      - spec/models/**_spec.rb
+  fetch:
+    script: bin/fetch
 
-  second:
-    test_pattern:
-      - spec/models/**_spec.rb
+  first:
+    script: bin/first
+    output:
+      - out.tar
